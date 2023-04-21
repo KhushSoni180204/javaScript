@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Dice Game</title>
+  </head>
+  <body>
+    <h1>Simple Dice Game</h1>
+    <p>Click the button to roll the dice!</p>
+    <button onclick="rollDice()">Roll Dice</button>
+    <p id="result"></p>
+    <script>
+        function rollDice() {
+        // generate random number between 1 and 6
+        var randomNumber = Math.floor(Math.random() * 6) + 1;
+
+        // set the image based on the random number
+        var diceImage = document.createElement("img");
+        diceImage.setAttribute("src", "dice-" + randomNumber + ".png");
+
+        // display the image on the page
+        var result = document.getElementById("result");
+        result.innerHTML = "";
+        result.appendChild(diceImage);
+    }
+
+    </script>
+  </body>
+</html>

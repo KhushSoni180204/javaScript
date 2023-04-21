@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function Add()
+    {
+        let a=parseFloat(document.getElementById("txt01").value);
+        let b=parseFloat(document.getElementById("txt02").value);
+        document.getElementById("txt03").value = a+b;
+    }
+    function Sub()
+    {
+        let a=parseFloat(document.getElementById("txt01").value);
+        let b=parseFloat(document.getElementById("txt02").value);
+        document.getElementById("txt03").value = a-b;
+    }
+    function Div()
+    {
+        let a=parseFloat(document.getElementById("txt01").value);
+        let b=parseFloat(document.getElementById("txt02").value);
+        document.getElementById("txt03").value = a/b;
+    }
+    function Mul()
+    {
+        let a=parseFloat(document.getElementById("txt01").value);
+        let b=parseFloat(document.getElementById("txt02").value);
+        document.getElementById("txt03").value = a*b;
+    }
+</script>
+<body>
+    <input type="text" name="txt01" id="txt01"><br><br>
+    <input type="text" name="txt02" id="txt02"><br><br>
+    <input type="button" value="+" onclick="Add()">
+    <input type="button" value="-" onclick="Sub()">
+    <input type="button" value="*" onclick="Mul()">
+    <input type="button" value="/" onclick="Div()"><br><br>
+    <input type="text" name="txt03" id="txt03">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = {
+            firstname : "shyam",
+            lastname : "chawda",
+            contactno : "9409630426",
+            age:20,
+            fullname:function()
+            {
+                return this.firstname+" - "+this.lastname;
+            },
+            yourage: function()
+            {
+                return "Age = " + this.age;
+            }
+        };
+        document.writeln(data.fullname());
+        document.writeln(data.yourage());
+        document.writeln(data.contactno);
+    </script>
+</body>
+</html>

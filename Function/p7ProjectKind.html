@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name : 'khush',
+            age : 20,
+            email : 'khushsoni773388@gmail.com',
+            blog : 'Mac vs Windows',
+            login()
+            {
+                console.log("The user logged in and username "+ user.name);
+            },
+            logout()
+            {
+                console.log("The logout and username "+user.name);
+            },
+            logblogs()
+            {
+                console.log("The user has written the following blogs");
+
+                console.log(user.blog);
+            },
+        }
+        user.login();
+        user.logblogs();
+        user.logout();
+    </script>
+</body>
+</html>

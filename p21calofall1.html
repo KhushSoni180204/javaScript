@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       html body
+        {
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center; 
+        }
+        .main
+        {
+            justify-content: center;
+        }
+        .txt input
+        {
+            width: 277px;
+            font-size: 20px;
+            margin: 0;
+            padding: 10px 0px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .row
+        {
+            width: 291px;
+            font-size: 20px;
+            margin: 0;
+            padding: 10px 0px;
+            border: 2px 
+            border-radius: 5px;
+        }
+        .row input
+        {
+            margin: 5px 0;
+        }
+        .button
+        {
+            width: 66px;
+            padding: 20px;
+            margin: 0 3px;
+            border: 2px solid black;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<script>
+    let n1=0;
+    let n2=0;
+    let op="";
+    function cal0() 
+    {
+        document.getElementById("text").value +=0;
+    }
+    function cal1()
+    {
+        document.getElementById("text").value +=1;
+    }
+    function cal2()
+    {
+        document.getElementById("text").value +=2;
+    }
+    function cal3()
+    {
+        document.getElementById("text").value +=3;
+    }
+    function cal4()
+    {
+        document.getElementById("text").value +=4;
+    }
+    function cal5()
+    {
+        document.getElementById("text").value +=5;
+    }
+    function cal6()
+    {
+        document.getElementById("text").value +=6;
+    }
+    function cal7()
+    {
+        document.getElementById("text").value +=7;
+    }
+    function cal8()
+    {
+        document.getElementById("text").value +=8;
+    }
+    function cal9()
+    {
+        document.getElementById("text").value +=9;
+    }
+    function cald()
+    {
+        document.getElementById("text").value +='.'
+    }
+    function Add()
+    {
+        n1=parseFloat(document.getElementById("text").value)
+        op="+";
+        document.getElementById("text").value = "";
+    }
+    function Mul()
+    {
+        n1=parseFloat(document.getElementById("text").value)
+        op="*";
+        document.getElementById("text").value = "";
+    }
+    function Sub()
+    {
+        n1=parseFloat(document.getElementById("text").value)
+        op="-";
+        document.getElementById("text").value = "";
+    }
+    function Div()
+    {
+        n1=parseFloat(document.getElementById("text").value)
+        op="/";
+        document.getElementById("text").value = "";
+    }
+    function Dvi()
+    {
+        n1=parseFloat(document.getElementById("text").value)
+        op="%";
+        document.getElementById("text").value = "";
+    }
+    function clea()
+    {
+        document.getElementById("text").value = "";
+    }
+    function Res()
+    {
+        n2=parseFloat(document.getElementById("text").value)
+        if(op=="+")
+        {
+            document.getElementById("text").value = n1+n2;
+        }
+        else if(op=="*")
+        {
+            document.getElementById("text").value = n1*n2;
+        }
+        else if(op=="-")
+        {
+            document.getElementById("text").value = n1-n2;
+        }
+        else if(op=="/")
+        {
+            document.getElementById("text").value = n1/n2;
+        }
+        else if(op=="%")
+        {
+            document.getElementById("text").value = n1%n2;
+        }
+    }
+</script>
+<body>
+    <div class="main">
+        <div class="txt">
+            <input type="text" id="text">
+        </div>
+        <div class="row">
+            <input type="button" value="C" class="button" onclick="clea()">
+            <input type="button" value="%" class="button" onclick="Dvi()">
+            <input type="button" value="M+" class="button">
+            <input type="button" value="M-" class="button">
+          </div>
+          <div class="row">
+            <input type="button" value="7" class="button" onclick="cal7()">
+            <input type="button" value="8" class="button" onclick="cal8()">
+            <input type="button" value="9" class="button" onclick="cal9()">
+            <input type="button" value="*" class="button" onclick="Mul()">
+          </div>
+          <div class="row">
+            <input type="button" value="4" class="button" onclick="cal4()">
+            <input type="button" value="5" class="button" onclick="cal5()">
+            <input type="button" value="6" class="button" onclick="cal6()">
+            <input type="button" value="/" class="button" onclick="Div()">
+          </div>
+          <div class="row">
+           <input type="button" value="1" class="button" onclick="cal1()">
+           <input type="button" value="2" class="button" onclick="cal2()">
+           <input type="button" value="3" class="button" onclick="cal3()">
+           <input type="button" value="+" class="button" onclick="Add()">
+          </div>
+          <div class="row">
+            <input type="button" value="0" class="button" onclick="cal0()">
+            <input type="button" value="." class="button" onclick="cald()">
+            <input type="button" value="=" class="button" onclick="Res()">
+            <input type="button" value="-" class="button" onclick="Sub()">
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divdata">
+        <h1>hi</h1>
+    </div>
+
+    <div id="divAns">
+
+    </div>
+
+    <input type="button" value="click me Text" name="btnAns1" onclick="hi1();">
+    <input type="button" value="click me Text" name="btnAns2" onclick="hi2();">
+</body>
+<script>
+    const hi1 = () => {
+        let data = document.getElementById("divdata").innerHTML;
+        divAns.innerText=data;
+    }
+
+    const hi2 = () =>{
+        let data = document.getElementById("divdata").innerText;
+        divAns.innerText=data;
+    }
+</script>
+</html>

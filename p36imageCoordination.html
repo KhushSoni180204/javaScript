@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #two
+    {
+        align-content: center;
+    }
+</style>
+<body>
+    <div id="one">    
+        <img id="image" src="lolblue.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="two">    
+        <img id="image2" src="lol.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="three">    
+        <img id="image3" src="lol.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="four">    
+        <img id="image4" src="lolblue.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="five">    
+        <img id="image5" src="lol.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="six">    
+        <img id="image6" src="lolblue.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="seven">    
+        <img id="image7" src="lol.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+    <div id="eight">    
+        <img id="image8" src="lolblue.jpg" style="position: absolute;" onclick="lol()">
+    </div>
+<script>
+    // Creating a variable for X and Y Cordination 
+  let x = 0;
+  let y = 0;
+  let directionX = 1;
+  let directionY = 1;
+  
+  let x1 = 0;
+  let y1 = 0;
+  let dx = 1;
+  let dy = 1;
+
+  let x2 = 0;
+  let y2 = 0;
+  let dx1 = 1;
+  let dy1 = 1;
+  
+  let x4 = 0;
+  let y4 = 0;
+  let dx4 = 1;
+  let dy4 = 1;
+  
+  let x5 = 0;
+  let y5 = 0;
+  let dx5 = 1;
+  let dy5 = 1;
+  
+  let x6 = 0;
+  let y6 = 0;
+  let dx6 = 1;
+  let dy6 = 1;
+  
+  let x7 = 0;
+  let y7 = 0;
+  let dx7 = 1;
+  let dy7 = 1;
+  
+  let x8 = 0;
+  let y8 = 0;
+  let dx8 = 1;
+  let dy8 = 1;
+
+    // Using setInteval for moving the image on X and Y cordination
+  setInterval(() => {
+    const image = document.getElementById("image");
+    
+    x += 10 * directionX;
+    y += 10 * directionY;
+    
+    if (x >= window.innerWidth || x <= 0) 
+    {
+      directionX *= -1;
+    }
+    
+    if (y >= window.innerHeight || y <= 0) 
+    {
+      directionY *= -1;
+    }
+    
+    image.style.left = x + "px";
+    image.style.top = y + "px";
+  }, 100);
+
+
+  setInterval(() => {
+    const image2 = document.getElementById("image2");
+    
+    x1 += 10 * dx;
+    y1 += 10 * dy;
+    
+    if (x1 >= window.innerWidth || x1 <= 0) 
+    {
+      dx *= -1;
+    }
+    
+    if (y1 >= window.innerHeight || y1 <= 0) 
+    {
+      dy *= -1;
+    }
+    
+    image2.style.right = x1 + "px";
+    image2.style.bottom = y1 + "px";
+  }, 25);
+
+  setInterval(() => {
+    const image3 = document.getElementById("image3");
+    
+    x2 += 10 * dx1;
+    y2 += 10 * dy1;
+
+    if (x2 >= window.innerWidth || x2 <= 0) 
+    {
+      dx1 *= -1;
+    }
+    
+    if (y2 >= window.innerHeight || y2 <= 0) 
+    {
+      dy1 *= -1;
+    }
+    
+    image3.style.left = x2 + "px";
+    image3.style.top = y2 + "px";
+  }, 50);
+  
+  setInterval(() => {
+    const image3 = document.getElementById("image3");
+    
+    x4 += 10 * dx4;
+    y4 += 10 * dy4;
+
+    if (x4 >= window.innerWidth || x4 <= 0) 
+    {
+      dx4 *= -1;
+    }
+    
+    if (y4 >= window.innerHeight || y4 <= 0) 
+    {
+      dy4 *= -1;
+    }
+    
+    image4.style.right = x4 + "px";
+    image4.style.bottom = y4 + "px";
+  }, 51);
+  
+  setInterval(() => {
+    const image5 = document.getElementById("image5");
+    
+    x5 += 10 * dx5;
+    y5 += 10 * dy5;
+
+    if (x5 >= window.innerWidth || x5 <= 0) 
+    {
+      dx5 *= -1;
+    }
+    
+    if (y5 >= window.innerHeight || y5 <= 0) 
+    {
+      dy5 *= -1;
+    }
+    
+    image5.style.right = x5 + "px";
+    // image5.style.bottom = y5 + "px";
+  }, 51);
+  
+  setInterval(() => {
+    const image6 = document.getElementById("image6");
+    
+    x6 += 10 * dx6;
+    y6 += 10 * dy6;
+
+    if (x6 >= window.innerWidth || x6 <= 0) 
+    {
+      dx6 *= -1;
+    }
+    
+    if (y6 >= window.innerHeight || y6 <= 0) 
+    {
+      dy6 *= -1;
+    }
+    
+    image6.style.left = x6 + "px";
+    // image5.style.bottom = y5 + "px";
+  }, 27);
+
+  setInterval(() => {
+    const image7 = document.getElementById("image7");
+    
+    x7 += 10 * dx7;
+    y7 += 10 * dy7;
+
+    if (x7 >= window.innerWidth || x7 <= 0) 
+    {
+      dx7 *= -1;
+    }
+    
+    if (y7 >= window.innerHeight || y7 <= 0) 
+    {
+      dy7 *= -1;
+    }
+    
+    image7.style.bottom = x7 + "px";
+    // image5.style.bottom = y5 + "px";
+  }, 10);
+  
+  setInterval(() => {
+    const image8 = document.getElementById("image8");
+    
+    x8 += 10 * dx8;
+    y8 += 10 * dy8;
+
+    if (x8 >= window.innerWidth || x8 <= 0) 
+    {
+      dx8 *= -1;
+    }
+    
+    if (y8 >= window.innerHeight || y8 <= 0) 
+    {
+      dy8 *= -1;
+    }
+    
+    image8.style.right = x8 + "px";
+    image8.style.bottom = y8 + "px";
+  }, 10);
+
+    // Making a function for blasting blue ballons and giving alert on clicking red ballons
+  function lol()
+  {
+    const lol = document.getElementById("image");
+    lol.addEventListener("click", function() {
+    lol.src = "";
+    });
+    
+    const image4 = document.getElementById("image4");
+    image4.addEventListener("click", function() {
+    image4.src = "";
+    });
+
+    const image2 = document.getElementById("image2");
+    image2.addEventListener("click", function() {
+    alert("Don't click red ballon !");
+    });
+
+    const image3 = document.getElementById("image3");
+    image3.addEventListener("click", function() {
+        alert("Don't click red ballon !");
+    });
+
+    const image5 = document.getElementById("image5");
+    image5.addEventListener("click", function() {
+        alert("Don't click red ballon !");
+    });
+    
+    const image7 = document.getElementById("image7");
+    image7.addEventListener("click", function() {
+        alert("Don't click red ballon !");
+    });
+
+    const image6 = document.getElementById("image6");
+    image6.addEventListener("click", function() {
+        image6.src = "";
+    });
+    
+    const image8 = document.getElementById("image8");
+    image8.addEventListener("click", function() {
+        image8.src = "";
+    });
+
+  }
+
+</script>
+</body>
+</html>

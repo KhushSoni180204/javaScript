@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+<style>
+    .a{
+        height: 150px;
+        width: 150px;
+       
+     }        
+</style>
+<script>
+        let a1=0,a2=0;
+        let b1=0,b2=0;
+        let c1=0,c2=0;
+        let d1=0,d2=0;
+
+        function card0()
+        {
+            document.images[0].src="Ace_of_spades.svg.png";
+            a1=1;
+        }
+        function card1()
+        {
+            document.images[1].src="d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png";
+            b1=1;
+        }
+        function card2()
+        {
+            document.images[2].src="1200px-7_of_hearts.svg.png";
+            d1=1;
+        }
+        function card3()
+        {
+            document.images[3].src="800px-Cards-3-Diamond.svg.png";
+            c1=1;
+        }
+        function card4()
+        {
+            document.images[4].src="Ace_of_spades.svg.png";
+            a2=1;
+        }
+        function card5()
+        {
+            document.images[5].src="d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png";
+            b2=1;
+        }
+        function card6()
+        {
+            document.images[6].src="1200px-7_of_hearts.svg.png";
+            d2=1;
+        }
+        function card7()
+        {
+            document.images[7].src="800px-Cards-3-Diamond.svg.png";
+            c2=1;
+        }
+        function resets()
+        {
+            for(i=0;i<9;i++)
+            {
+                document.images[i].src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp";
+            }
+        }
+        function compares()
+        {   
+            if(a1==a2 && a1==1)
+            {
+                document.images[0].src="Ace_of_spades.svg.png";
+                document.images[4].src="Ace_of_spades.svg.png";
+                
+            }
+            if(a1!=a2 && a1!=1)
+            {
+                document.images[0].src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp";
+                document.images[4].src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp";
+                
+            }
+            else if(b1==b2 && b1==1)
+            {
+                document.images[1].src="d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png";
+                document.images[5].src="d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png";
+            
+            }
+            else if(c1==c2 && c1==1)
+            {
+                document.images[3].src="1200px-7_of_hearts.svg.png";
+                document.images[7].src="1200px-7_of_hearts.svg.png";
+            
+            }
+            else if(d1==d2 && d1==1)
+            {
+                document.images[2].src="800px-Cards-3-Diamond.svg.png";
+                document.images[6].src="800px-Cards-3-Diamond.svg.png";
+            
+            }
+
+        }
+    </script>
+    <form >
+        <table border="1" bordercolor="black" width="100%">
+
+       
+            <tr>
+                <td><img name="img1" id="img1" class="a" onclick="card0();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+                <td><img name="img2" id="img2" class="a" onclick="card1();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td> 
+                <td><img name="img3" id="img3" class="a" onclick="card2();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+        
+            </tr>
+
+            <tr>
+                <td><img name="img4" id="img4" class="a" onclick="card3();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+                <td><img name="img5" id="img5" class="a" onclick="card4();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+                <td><img name="img6" id="img6" class="a" onclick="card5();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+            </tr>
+            <tr>
+                <td><img name="img7" id="img7" class="a" onclick="card6();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+                <td><img name="img8" id="img8" class="a" onclick="card7();" src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"></td>
+            </tr>
+                
+            <tr>
+                
+                <td><input type="reset" onclick="resets();" ></td>
+                <td><input type="button" name="compare" value="compare" onclick="compares();"></td>
+            </tr>
+            
+        
+            </table>
+
+    </form>
+</body>
+</html>

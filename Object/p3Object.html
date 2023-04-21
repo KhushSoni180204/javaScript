@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <span id="spandata">
+
+        </span>
+    </p>
+    <script>
+        let biodata = {
+            myname : {
+                firstname: "khush",
+                lastname: "soni"
+            },
+            myage: 39,
+            city: "Ahmedabad",
+            contactno: "9409630426",
+            "like phycopaths": true,
+        }
+        let fname = biodata.myname.firstname;
+        let lastname = biodata.myname.lastname;
+        let myage = biodata.myage;
+        let phycopaths = biodata["like phycopaths"];
+
+        let merge = fname +"<br>" + lastname +"<br>" + myage +"<br>" + phycopaths;
+        document.getElementById("spandata").innerHTML=merge;
+        alert(biodata["myage"]);
+        
+        let key = prompt("what do you want to know about the user?",name);
+        alert(biodata[key]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #table
+        {
+            justify-content: center;
+        }
+        .data
+        {
+            width: 65px;
+            padding: 20px;
+            margin: 0 3px;
+            border: 2px solid black;
+            background-color: lightg;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        #but
+        {
+
+        }
+    </style>
+</head>
+<script>
+    let g=1
+    function tic1()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a1").value='X';
+            document.getElementById("a1").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a1").value='O';
+            document.getElementById("a1").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic2()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a2").value='X';
+            document.getElementById("a2").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a2").value='O';
+            document.getElementById("a2").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic3()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a3").value='X';
+            document.getElementById("a3").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a3").value='O';
+            document.getElementById("a3").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic4()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a4").value='X';
+            document.getElementById("a4").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a4").value='O';
+            document.getElementById("a4").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic5()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a5").value='X';
+            document.getElementById("a5").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a5").value='O';
+            document.getElementById("a5").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic6()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a6").value='X';
+            document.getElementById("a6").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a6").value='O';
+            document.getElementById("a6").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic7()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a7").value='X';
+            document.getElementById("a7").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a7").value='O';
+            document.getElementById("a7").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic8()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a8").value='X';
+            document.getElementById("a8").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a8").value='O';
+            document.getElementById("a8").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function tic9()
+    {
+        if(g%2==0)
+        {
+            document.getElementById("a9").value='X';
+            document.getElementById("a9").disabled = true;
+        }
+        else
+        {
+            document.getElementById("a9").value='O';
+            document.getElementById("a9").disabled = true;
+        }
+        g++;
+        chekval()
+    }
+    function chekval()
+    {
+       var b1,b2,b3,b4,b5,b6,b7,b8,b9;
+
+       b1=document.getElementById("a1").value;
+       b2=document.getElementById("a2").value;
+       b3=document.getElementById("a3").value;
+       b4=document.getElementById("a4").value;
+       b5=document.getElementById("a5").value;
+       b6=document.getElementById("a6").value;
+       b7=document.getElementById("a7").value;
+       b8=document.getElementById("a8").value;
+       b9=document.getElementById("a9").value;
+
+       if((b1=='X')&&(b2=='X')&&(b3=='X'))
+       {
+            alert("Player X Wins")
+            document.getElementById("a4").disabled = true;
+            document.getElementById("a5").disabled = true;
+            document.getElementById("a6").disabled = true;
+            document.getElementById("a7").disabled = true;
+            document.getElementById("a8").disabled = true;
+            document.getElementById("a9").disabled = true;
+       }
+       else if((b1=='O')&&(b2=='O')&&(b3=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b1=='X')&&(b4=='X')&&(b7=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b1=='O')&&(b4=='O')&&(b7=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b1=='O')&&(b5=='O')&&(b9=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b1=='X')&&(b5=='X')&&(b9=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b3=='X')&&(b6=='X')&&(b9=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b3=='O')&&(b6=='O')&&(b9=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b7=='O')&&(b8=='O')&&(b9=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b7=='X')&&(b8=='X')&&(b9=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b2=='X')&&(b5=='X')&&(b8=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b2=='O')&&(b5=='O')&&(b8=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b4=='O')&&(b5=='O')&&(b6=='O'))
+       {
+            alert("Player O Wins")
+       }
+       else if((b4=='X')&&(b5=='X')&&(b6=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b3=='X')&&(b5=='X')&&(b7=='X'))
+       {
+            alert("Player X Wins")
+       }
+       else if((b3=='O')&&(b5=='O')&&(b7=='X'))
+       {
+            alert("Player O Wins")
+       }
+    }
+    function tic()
+    {
+        document.getElementById("a1").value=""
+        document.getElementById("a1").disabled = false;
+        document.getElementById("a2").value=""
+        document.getElementById("a2").disabled = false;
+        document.getElementById("a3").value=""
+        document.getElementById("a3").disabled = false;
+        document.getElementById("a4").value=""
+        document.getElementById("a4").disabled = false;
+        document.getElementById("a5").value=""
+        document.getElementById("a5").disabled = false;
+        document.getElementById("a6").value=""
+        document.getElementById("a6").disabled = false;
+        document.getElementById("a7").value=""
+        document.getElementById("a7").disabled = false;
+        document.getElementById("a8").value=""
+        document.getElementById("a8").disabled = false;
+        document.getElementById("a9").value=""
+        document.getElementById("a9").disabled = false;
+    }
+</script>
+<body>
+    <div id="main">
+        <table id="table">
+            <tr>
+                <td><input type="button" value="" class="data" onclick="tic1()" id="a1"></td>
+                <td><input type="button" value="" class="data" onclick="tic2()" id="a2"></td>
+                <td><input type="button" value="" class="data" onclick="tic3()" id="a3"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="" class="data" onclick="tic4()" id="a4"></td>
+                <td><input type="button" value="" class="data" onclick="tic5()" id="a5"></td>
+                <td><input type="button" value="" class="data" onclick="tic6()" id="a6"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="" class="data" onclick="tic7()" id="a7"></td>
+                <td><input type="button" value="" class="data" onclick="tic8()" id="a8"></td>
+                <td><input type="button" value="" class="data" onclick="tic9()" id="a9"></td>
+            </tr>
+        </table>
+        <button id="but" onclick="tic()">Reset</button>
+        <p id="para"></p>
+    </div>
+</body>
+</html>

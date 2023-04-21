@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let a=0;
+    let b=0;
+    let x=0;
+    function a1()
+    {
+        x=1;
+    }
+    function s1()
+    {
+        x=2;
+    }
+    function m1()
+    {
+        x=3;
+    }
+    function d1()
+    {
+        x=4;
+    }
+    function main()
+    {
+        a = parseFloat(document.getElementById("lol").value);
+        b = parseFloat(document.getElementById("lol1").value);
+
+        if(x==1)
+        {
+            document.getElementById("lol2").value = a+b;
+        }
+        else if(x==2)
+        {
+            document.getElementById("lol2").value = a-b;
+        }
+        else if(x==3)
+        {
+            document.getElementById("lol2").value = a*b;
+        }
+        else if(x==4)
+        {
+            document.getElementById("lol2").value = a/b;
+        }
+    }
+</script>
+<body>
+    <input type="text" id="lol"><br>
+    <input type="text" id="lol1"><br>
+    <input type="radio" name="Math" id="Add" onclick="a1()"><label for="Add">Addition</label><br>
+    <input type="radio" name="Math" id="Sub" onclick="s1()"><label for="Sub">Subtraction</label><br>
+    <input type="radio" name="Math" id="Mul" onclick="m1()"><label for="Sub">Multiplication</label><br>
+    <input type="radio" name="Math" id="Div" onclick="d1()"><label for="Sub">Divition</label><br>
+    <input type="button" value="Submit" onclick="main()"><br>
+    <input type="text" id="lol2"><br>
+</body>
+</html>

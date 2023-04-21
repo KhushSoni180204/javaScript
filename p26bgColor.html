@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function a1()
+    {
+        document.bgColor = "red";
+        document.fgColor =  "blue"
+    }
+    function s1()
+    {
+        document.bgColor = "blue";
+        document.fgColor = "red"
+    }
+    function m1()
+    {
+        document.bgColor = "gray";
+        document.fgColor = "yellow"
+    }
+    function d1()
+    {
+        document.bgColor = "yellow";
+        document.fgColor = "gray"
+    }
+</script>
+<body>
+    <input type="radio" name="Math" id="Add" onclick="a1()"><label for="Add">Red</label><br>
+    <input type="radio" name="Math" id="Sub" onclick="s1()"><label for="Sub">Blue</label><br>
+    <input type="radio" name="Math" id="Mul" onclick="m1()"><label for="Sub">Gray</label><br>
+    <input type="radio" name="Math" id="Div" onclick="d1()"><label for="Sub">Yellow</label><br>
+</body>
+</html>

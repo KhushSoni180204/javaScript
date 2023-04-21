@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="red_light"></div>
+  <div id="yellow_light"></div>
+  <div id="green_light"></div>
+
+<style>
+#red_light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#yellow_light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#green_light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: white;
+}
+
+</style>
+<script>
+
+  const red = document.getElementById("red_light");
+  const yellow = document.getElementById("yellow_light");
+  const green = document.getElementById("green_light");
+  let redIndex = 0;
+  let yellowIndex = 0;
+  let greenIndex = 0;
+  const redcolor = ["white","red","white","white"];
+  const yellowcolor = ["white","white","yellow","white"];
+  const greencolor = ["white","white","white","green"];
+  
+  setInterval(() => {
+    red_light.style.backgroundColor = redcolor[redIndex];
+    redIndex = (redIndex + 1) % redcolor.length;
+  }, 1000);
+
+  setInterval(() => {
+    yellow_light.style.backgroundColor = yellowcolor[yellowIndex];
+    yellowIndex = (yellowIndex + 1) % yellowcolor.length;
+  }, 1000);
+
+  setInterval(() => {
+    green_light.style.backgroundColor = greencolor[greenIndex];
+    greenIndex = (greenIndex + 1) % greencolor.length;
+  }, 1000);
+
+</script>
+
+</body>
+</html>

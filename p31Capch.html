@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #capch
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    #inputcap
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 89vh;
+    }
+    #login
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 99vh;
+    }
+</style>
+<body>
+    <div id="capch">
+        <span id="spanfirst"></span>
+        <span id="spansecond"></span>
+        <span id="spanthird"></span>
+        <span id="spanfourth"></span>
+    </div><br>
+    <input  type="text" id="inputcap"><br>
+    <input type="button" value="Login" id="login" onclick="random()">
+</body>
+<script>
+    let random1 = Math.floor((Math.random()*9999)+1000);
+    
+    document.getElementById("spanfirst").innerHTML = random1 
+
+    function random()
+    {
+        let a = document.getElementById("inputcap").value;
+        if(a==random1)
+        {
+            alert("Login Sucessful")
+        }
+        else
+        {
+            alert("Enter correct capch!!!")
+        }
+    }
+</script>
+</html>

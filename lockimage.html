@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //get the image element by its id
+var image = document.getElementById("myImage");
+
+//define an array of image sources
+var images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+
+//index variable to keep track of the current image
+var index = 0;
+
+//flag to check if the image is locked
+var isLocked = false;
+
+//function to change the image
+function changeImage() {
+    if (!isLocked) {
+        image.src = images[index];
+        index++;
+        if (index >= images.length) {
+            index = 0;
+        }
+    }
+}
+
+//function to lock the image
+function lockImage() {
+    isLocked = true;
+}
+
+//call the changeImage function every 5 seconds
+setInterval(changeImage, 5000);
+
+//attach the lockImage function to the onclick event of the image
+image.onclick = lockImage;
+
+
+
+
+
+
+
+
+const image = document.getElementById("image");
+
+image.addEventListener("click", function() {
+    if (image.src === "expected_image.jpg") {
+        // disable the image
+        this.style.pointerEvents = "none";
+    }
+});
+
+</script>
+<body>
+<img id="image" src="initial_image.jpg">
+    
+</body>
+</html>

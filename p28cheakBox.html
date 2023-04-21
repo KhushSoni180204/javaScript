@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let t=5;
+    let i=2;
+    let h=3;
+    function h4()
+    {
+        
+        document.getElementById("txt").value = "";
+        if(i%2==0)
+        {
+            a = document.getElementById("txt").value += "Reading ";
+            t++;
+        }
+    
+        if(h%3==0)
+        {
+            a = document.getElementById("txt").value += "Sports ";
+            h=h+3;
+        }
+
+        if(t%5==0)
+        {
+            a = document.getElementById("txt").value += "Study ";
+            t=t+5;
+        }
+    }
+</script>
+<body>
+    <input type="checkbox" onclick="h4()" id="h1"> <label for="reading">Reading</label><br>
+    <input type="checkbox" onclick="h4()" id="h2"> <label for="sports">Sports</label><br>
+    <input type="checkbox" onclick="h4()" id="h3"> <label for="study">Study</label><br>
+    <input type="text" id="txt">
+</body>
+</html>

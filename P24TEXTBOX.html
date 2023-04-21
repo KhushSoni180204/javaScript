@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let a = 0;
+    let b = 0;
+    function c1()
+    {
+        b=1;
+    }
+    function s1()
+    {
+        b=2;
+    }
+    function main()
+    {
+        let a=parseInt(document.getElementById("lol").value);
+        if(b==1)
+        {
+            document.write(a*a*a);
+        }
+        else
+        {
+            document.write(a*a);
+        }
+    }
+</script>
+<body>
+    <input type="text" id="lol"><br>
+    <input type="radio" name="Math" id="cube" onclick="c1()"><label for="cube">cube</label>
+    <input type="radio" name="Math" id="square" onclick="s1()"><label for="square">square</label><br>
+    <input type="button" value="Submit" onclick="main()">
+</body>
+</html>

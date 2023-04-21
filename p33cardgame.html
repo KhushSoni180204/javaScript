@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .divblock{
+        height: 300%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    #firstcard{
+        height: 300px;
+        width: 200px;
+    }
+    #default{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        margin: 5px;
+    }
+    #default1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        margin: 5px;
+    }
+    #default2{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default3{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default4{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default5{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default6{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default7{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+</style>
+<body>
+    <div class="divblock">
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default" onclick="changeImage()"> 
+    </div>
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default1" onclick="changeImage1()"> 
+    </div>
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default2" onclick="changeImage2()"> 
+    </div>
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default3" onclick="changeImage3()"> 
+    </div>
+
+    </div>
+    <div class="divblock">
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default4" onclick="changeImage4()"> 
+    </div>
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default5" onclick="changeImage5()"> 
+    </div>
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default6" onclick="changeImage6()"> 
+    </div>
+    <div id="firstcard"> 
+        <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default7" onclick="changeImage7()"> 
+    </div>
+    </div>
+    <input type="button" value="Cheak It" onclick="CheakAce()">
+<script>
+            //get the image element by its id
+            var image = document.getElementById("default");
+            var image1 = document.getElementById("default1")
+            var image2 = document.getElementById("default2")
+            var image3 = document.getElementById("default3")
+            var image4 = document.getElementById("default4")
+            var image5 = document.getElementById("default5")
+            var image6 = document.getElementById("default6")
+            var image7 = document.getElementById("default7")
+        //define an array of image sources
+        var images = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "Ace_of_spades.svg.png"];
+        var images1 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png"];
+        var images2 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "1200px-7_of_hearts.svg.png"];
+        var images3 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "800px-Cards-3-Diamond.svg.png"];
+        var images4 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "1200px-7_of_hearts.svg.png"];
+        var images5 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "800px-Cards-3-Diamond.svg.png"];
+        var images6 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "Ace_of_spades.svg.png"];
+        var images7 = ["playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp", "d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png"];
+        
+        //index variable to keep track of the current image
+        var index = 0;
+        var index1 = 0;
+        //function to change the image
+
+        function lockImage() 
+        {
+            isLocked = true;
+        }
+        function changeImage() {
+            image.src = images[index];
+            index++;
+            index1 = index1 + 1;
+            if (index >= images.length) 
+            {
+                index = 0;
+            }
+        }
+        function changeImage1() {
+            image1.src = images1[index];
+            index++;
+            if (index >= images1.length) {
+                index = 0;
+            }
+        }
+        function changeImage2() {
+            image2.src = images2[index];
+            index++;
+            if (index >= images2.length) {
+                index = 0;
+            }
+        }
+        function changeImage3() {
+            image3.src = images3[index];
+            index++;
+            if (index >= images3.length) {
+                index = 0;
+            }
+        }
+        function changeImage4() {
+            image4.src = images4[index];
+            index++;
+            if (index >= images4.length) {
+                index = 0;
+            }
+        }
+        function changeImage5() {
+            image5.src = images5[index];
+            index++;
+            if (index >= images5.length) {
+                index = 0;
+            }
+        }
+        function changeImage6() {
+            image6.src = images6[index];
+            index++;
+            index1 = index1 + 1;
+            if (index6 >= images6.length) {
+                index = 0;
+            }
+        }
+        function changeImage7() {
+            image7.src = images7[index];
+            index++;
+            if (index >= images7.length) {
+                index = 0;
+            }
+        }
+
+        //Function to cheak and disable image.
+        function CheakAce()
+        {
+            if(index1 == 2)
+            {
+                document.getElementById("default").disabled = true
+                document.getElementById("default6").disabled = true
+            }
+        }
+</script>
+</body>
+</html>

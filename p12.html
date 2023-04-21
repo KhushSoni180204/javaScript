@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function sum()
+    {
+    let a=document.getElementById("txt01").value;
+    let b=document.getElementById("txt02").value;
+    document.getElementById("txtans").value= a*b;
+    }
+</script>
+<body>
+    <form>
+        <input type="text" name="txt01" id="txt01"><br>
+        <input type="text" name="txt02" id="txt02"><br>
+        <input type="button" value="Click Me" onclick="sum()"><br>
+        <input type="text" name="txtans" id="txtans"><br>
+    </form>
+</body>
+</html>

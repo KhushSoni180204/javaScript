@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .divblock{
+        height: 300%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    #firstcard{
+        height: 300px;
+        width: 200px;
+    }
+    #default{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        margin: 5px;
+    }
+    #default1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        margin: 5px;
+    }
+    #default2{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default3{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default4{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default5{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default6{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+    #default7{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        float: left;
+        margin: 5px;
+    }
+</style>
+<body>
+    <div class="divblock">
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default"> 
+        </div>
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default1" > 
+        </div>
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default2" > 
+        </div>
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default3" > 
+        </div>
+    
+        </div>
+        <div class="divblock">
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default4" > 
+        </div>
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default5" > 
+        </div>
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default6" > 
+        </div>
+        <div id="firstcard"> 
+            <img src="playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp" alt="lol" id="default7" > 
+        </div>
+        </div>
+</body>
+<script>
+    //saving image in a var by id.
+    var image = document.getElementById("default");
+    var image1 = document.getElementById("default1");
+    var image2 = document.getElementById("default2");
+    var image3 = document.getElementById("default3");
+    var image4 = document.getElementById("default4");
+    var image5 = document.getElementById("default5");
+    var image6 = document.getElementById("default6");
+    var image7 = document.getElementById("default7");
+
+    //creating a array of image to change it onclick.
+    var images = ["Ace_of_spades.svg.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images1 = ["d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images2 = ["1200px-7_of_hearts.svg.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images3 = ["800px-Cards-3-Diamond.svg.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images4 = ["1200px-7_of_hearts.svg.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images5 = ["Ace_of_spades.svg.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images6 = ["800px-Cards-3-Diamond.svg.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+    var images7 = ["d9v7fjq-d1f4eb87-ea8e-4e5e-8b69-f691a93f2a2f.png","playing-cards-tally-ho-circle-back-1_grande_91a16bf8-309f-4692-a18c-0f1086ec38de_2048x2048.webp"];
+
+    var index = 0
+    var index1 = 0
+    var index2 = 0
+    var index3 = 0
+    var index4 = 0
+    var index5 = 0
+    var index6 = 0
+    var index7 = 0
+
+
+    image.addEventListener("click", function(event) {
+    image.src = images[index]
+    index++;
+    if(image >= images.length)
+    {
+        image.src = images[1]
+    }
+    });
+    image1.addEventListener("click", function(event1) {
+    image1.src = images1[index]
+    index++;
+    if(image1 >= images1.length)
+    {
+        index1 = 0
+    }
+    });
+    image2.addEventListener("click", function(event2) {
+    image2.src = images2[index]
+    index++;
+    if(image2 >= images2.length)
+    {
+        index2 = 0
+    }
+    });
+    image3.addEventListener("click", function(event3) {
+    image3.src = images3[index]
+    index++;
+    if(image3 >= images3.length)
+    {
+        index3 = 0
+    }
+    });
+    image4.addEventListener("click", function(event4) {
+    image4.src = images4[index]
+    index++;
+    if(image4 >= images4.length)
+    {
+        index4 = 0
+    }
+    });
+    image5.addEventListener("click", function(event5) {
+    image5.src = images5[index]
+    index++;
+    if(image5 >= images5.length)
+    {
+        index5 = 0
+    }
+    });
+    image6.addEventListener("click", function(event6) {
+    image6.src = images6[index]
+    index++;
+    if(image6 >= images6.length)
+    {
+        index6 = 0
+    }
+    });
+    image7.addEventListener("click", function(event7) {
+    image7.src = images7[index]
+    index++;
+    if(image7 >= images7.length)
+    {
+        index7 = 0
+    }
+    });
+</script>
+</html>

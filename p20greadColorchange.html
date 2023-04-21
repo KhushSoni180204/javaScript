@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function lol()
+    {
+        let a = parseFloat(document.getElementById("txt01").value);
+        let b = parseFloat(document.getElementById("txt02").value);
+        
+        if(a<18 || b<18)
+        {
+            document.getElementById("spanans").innerHTML = "<h2>C</h2>";
+            document.getElementById("txt03").style.backgroundColor = "red";
+        }
+        else if(a<28 && b<28)
+        {
+            document.getElementById("spanans").innerHTML = "<h2>B</h2>";
+            document.getElementById("txt03").style.backgroundColor = "yellow";
+        }
+        else
+        {
+            document.getElementById("spanans").innerHTML = "<h2>A</h2>";
+            document.getElementById("txt03").style.backgroundColor = "green";
+        }
+    }
+</script>
+<body>
+    <input type="text" name="txt01" id="txt01" ><br><br>
+    <input type="text" name="txt02" id="txt02" ><br><br>
+    <input type="button" value="Click :)" onclick="lol()"><br><br>
+    <span id="spanans"></span>
+</body>
+</html>
